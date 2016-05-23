@@ -26,6 +26,7 @@ import java.util.Date;
  */
 public class AddContent extends AppCompatActivity implements View.OnClickListener{
 
+
     private String val;
     private Button savabtn,cancelbtn;
     private EditText editText;
@@ -35,6 +36,7 @@ public class AddContent extends AppCompatActivity implements View.OnClickListene
     private NotesDB notesDB;
     private SQLiteDatabase dbWriter;
     private File phoneFile,videoFile;
+
 
 
 
@@ -139,6 +141,7 @@ public class AddContent extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
 
         if (requestCode==1){
             Bitmap bitmap= BitmapFactory.decodeFile(phoneFile.getAbsolutePath());
