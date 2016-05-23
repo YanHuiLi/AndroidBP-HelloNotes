@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     */
 
-    //查询数据库的语句
+    //查询数据库的语句。适配
     public void selectDB(){
         cursor=dbReader.query(NotesDB.TABLE_NAME,null,null,null,null,null,null);
         adapter=new MyAdapter(this,cursor);
