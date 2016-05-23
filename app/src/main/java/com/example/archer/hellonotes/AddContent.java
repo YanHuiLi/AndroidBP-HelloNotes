@@ -133,7 +133,7 @@ public class AddContent extends AppCompatActivity implements View.OnClickListene
 
         SimpleDateFormat format=new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
         Date curDate=new Date();
-        //
+        //返回一个格式化的时间
         return format.format(curDate);
 
     }
